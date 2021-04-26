@@ -1,0 +1,10 @@
+insert into photo (url, name, price, stock) values ('http://yellowpages.com/pellentesque/quisque/porta.json', 'Beastmaster, The', 17, '7/27/2020');
+insert into photo (url, name, price, stock) values ('https://vinaora.com/ut/at/dolor/quis.json', 'Storm in Summer, A', 77, '6/21/2020');
+insert into photo (url, name, price, stock) values ('http://spotify.com/lorem/ipsum.jsp', 'Indie Game: The Movie', 70, '12/31/2020');
+insert into photo (url, name, price, stock) values ('https://wiley.com/justo/lacinia/eget/tincidunt/eget/tempus.json', 'Upside Down', 67, '11/2/2020');
+insert into photo (url, name, price, stock) values ('http://smh.com.au/tincidunt/eget/tempus/vel/pede/morbi.aspx', '3096 Days', 21, '2/16/2021');
+insert into photo (url, name, price, stock) values ('https://1688.com/odio/donec/vitae.xml', 'Lies and Illusions', 60, '8/11/2020');
+insert into photo (url, name, price, stock) values ('https://engadget.com/dui/vel/nisl.json', 'Incredible Hulk Returns, The', 41, '7/15/2020');
+insert into photo (url, name, price, stock) values ('http://craigslist.org/nulla/elit/ac/nulla/sed.jpg', 'Italian Straw Hat, The (Un chapeau de paille d''Italie)', 48, '10/10/2020');
+insert into photo (url, name, price, stock) values ('http://intel.com/duis/faucibus.js', '9', 35, '8/19/2020');
+insert into photo (url, name, price, stock) values ('https://histats.com/donec/semper/sapien/a/libero.json', 'Man You Had in Mind, The', 19, '12/31/2020');
