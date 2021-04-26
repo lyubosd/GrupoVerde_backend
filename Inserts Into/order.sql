@@ -1,0 +1,10 @@
+insert into order (numorder, successful, created_at) values ('08b02845664b506ea10b41e77bc95c1d08c8e742', 309, '4/11/2021');
+insert into order (numorder, successful, created_at) values ('577eff2be86b002231dac12d06ec2c0953f2ce25', 603, '11/12/2020');
+insert into order (numorder, successful, created_at) values ('d0199391ac9e1d6ee1e0bcbdabd55cb9356322f5', 215, '8/28/2020');
+insert into order (numorder, successful, created_at) values ('c2d34b2785d921397ec344c484ab2f1379e03c0a', 713, '5/23/2020');
+insert into order (numorder, successful, created_at) values ('73ce57e4af75592f4064013ecebbf007e1a2052b', 190, '11/10/2020');
+insert into order (numorder, successful, created_at) values ('37c8fbbd51be970b7cc8340e0387d9187cd4ea7b', 224, '7/20/2020');
+insert into order (numorder, successful, created_at) values ('2fb0fcf506ee858dc010dcc9e61a5605bff54f70', 576, '4/8/2021');
+insert into order (numorder, successful, created_at) values ('56ac0fbcefa2f8da34e462cdcda6e98add993d25', 938, '6/1/2020');
+insert into order (numorder, successful, created_at) values ('13d5c2d5bf97474ec138aeff24b238c3ef4d2f66', 544, '5/9/2020');
+insert into order (numorder, successful, created_at) values ('21789fe478512e74879b63711bc898cb2bc9a1cd', 734, '8/1/2020');
