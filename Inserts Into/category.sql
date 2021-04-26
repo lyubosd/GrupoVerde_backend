@@ -1,0 +1,10 @@
+insert into category (name) values ('dgenner0');
+insert into category (name) values ('sflahive1');
+insert into category (name) values ('cgerard2');
+insert into category (name) values ('clucia3');
+insert into category (name) values ('rtaffe4');
+insert into category (name) values ('asouttar5');
+insert into category (name) values ('ncolwell6');
+insert into category (name) values ('jproschke7');
+insert into category (name) values ('lgainfort8');
+insert into category (name) values ('tsimons9');
