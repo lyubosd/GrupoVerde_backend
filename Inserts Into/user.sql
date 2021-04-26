@@ -4,15 +4,16 @@ create table user (
 	email VARCHAR(50),
 	created_at DATE,
 	updated_at DATE,
-	email_verificate_at DATE
+	email_verificate_at DATE,
+	url VARCHAR(50)
 );
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('ncaldecott0', 'd9d5b240b11408e1049826b5b9ca8b87', 'dmarqyes0@cnet.com', '6/7/2020', '3/20/2021', '10/15/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('htrodden1', 'f256991e213d596bed538f6a58ce7264', 'alamplough1@google.com.hk', '10/8/2020', '8/21/2020', '7/9/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('sphil2', 'a4dac0af7b732a7691d3be5c8478752a', 'umullin2@instagram.com', '5/18/2020', '2/23/2021', '6/17/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('tdugan3', '72e81493b7449707a9eab3afe1e3229c', 'efall3@tuttocitta.it', '1/20/2021', '11/24/2020', '7/11/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('alomond4', 'fa3f270f68c7d6b6fa9f755efc4520ac', 'lirwin4@creativecommons.org', '12/6/2020', '11/25/2020', '12/13/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('tcron5', '3d2a1e8abbbe93386b6bbcad93653d77', 'rbusch5@ft.com', '2/1/2021', '9/4/2020', '11/16/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('pkernoghan6', '432de1e80974d9e33c395bc4f52696a6', 'bhawkyens6@cyberchimps.com', '4/23/2021', '4/8/2021', '10/20/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('vdunthorn7', 'f3509d2d80fe9b6c6cc5e4b014248132', 'tguitonneau7@constantcontact.com', '2/19/2021', '9/27/2020', '9/26/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('twhisker8', '2b5e68408e7429364a3d7808c6317ddc', 'cbaggaley8@purevolume.com', '12/14/2020', '2/16/2021', '12/7/2020');
-insert into user (username, hash, email, created_at, updated_at, email_verificate_at) values ('jfriar9', 'e384b0a557e71656e18868796692e4bc', 'bhagwood9@51.la', '1/15/2021', '9/7/2020', '10/20/2020');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('lainsby0', '2f06ce8eaf4114ddce1879be47c6bc7e', 'ekorbmaker0@desdev.cn', '3/8/2021', '4/13/2021', '8/19/2020', 'http://dummyimage.com/119x100.png/5fa2dd/ffffff');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('mhousecroft1', '4b70c95c94b5e34f349e6c2b705b70eb', 'mattrill1@elpais.com', '3/22/2021', '8/7/2020', '9/19/2020', 'http://dummyimage.com/173x100.png/dddddd/000000');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('nbunston2', '4be462926514f02a7a71fbd3cca43b9c', 'tvarley2@parallels.com', '12/25/2020', '8/9/2020', '11/30/2020', 'http://dummyimage.com/144x100.png/ff4444/ffffff');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('athouless3', '416a82bbad217f99ee89253c1aebe7ce', 'mkubacek3@hibu.com', '4/9/2021', '9/10/2020', '11/10/2020', 'http://dummyimage.com/225x100.png/5fa2dd/ffffff');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('jchater4', '4f425eb80ace1d81ef986c3ad3a18841', 'yjanas4@sakura.ne.jp', '5/9/2020', '5/9/2020', '8/7/2020', 'http://dummyimage.com/184x100.png/dddddd/000000');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('mclemson5', '64b323976e956fccffa8c9460ea22de2', 'gsturrock5@bizjournals.com', '3/4/2021', '10/16/2020', '7/7/2020', 'http://dummyimage.com/189x100.png/cc0000/ffffff');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('iiwaszkiewicz6', '25e38b700093f90f3fc9d62007d7178d', 'tilsley6@purevolume.com', '5/31/2020', '6/16/2020', '7/7/2020', 'http://dummyimage.com/193x100.png/5fa2dd/ffffff');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('twitherbed7', '4662c2fd71eaa92fad742ffe2cc10d73', 'fantunez7@theguardian.com', '5/30/2020', '9/2/2020', '9/5/2020', 'http://dummyimage.com/118x100.png/dddddd/000000');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('psalkeld8', '8f96df14cf1b3b012a9dceec95f0dc1c', 'lbreffit8@ted.com', '5/11/2020', '4/3/2021', '8/30/2020', 'http://dummyimage.com/201x100.png/ff4444/ffffff');
+insert into user (username, hash, email, created_at, updated_at, email_verificate_at, url) values ('mkobieriecki9', 'b361ccc43443934534a7c808615ec97e', 'nerrichelli9@intel.com', '10/8/2020', '4/21/2021', '7/14/2020', 'http://dummyimage.com/122x100.png/ff4444/ffffff');
