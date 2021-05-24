@@ -1,0 +1,64 @@
+//creo que hay que crear los campos de foreing key
+/*ej :$table->unsignedbigInteger('promotionIdPromotion')->unique()
+/*esto ya esta:*/$table->foreign('promotionIdPromotion')->references('idPromotion')->on('promotion');
+y para que se pueda borrar en cascada añadir ->onDelete('cascade');
+por si queremos que si el id cambie tambien en cascada añadir ->onUpdate('cascade');
+*/
+
+
+//relacion uno a uno
+//conectar: ej conctando user con profile : en models/user.php añadir un nuevo metodo que referencia a //la tabla que queremos 
+// ejemplo largo $profile = Profile::where('user_id', $this->id)->first(); return $profile
+//escribiendo menos:
+public function  profile(){
+return $this->hasOne(profile::class);}
+
+//profile::class es lo mismo que 'App\Models\Profile' pero si usamos profile::class tenemos que importar
+//arriba Profile con : use App\Models\Profile; asi que es mejor usar App/models...
+//si se ha cambiad el nombre de la clave hay que ponerla de segundo argumento asi: 
+//('App\Models\Profile','foreign_key','local_key');//esto n me queda muy claro
+
+// en la tabla contraria hacer la relacion inversa con:
+public function user(){
+return $this->belongsTo('App\Models\User');}
+
+
+//relacione uno a muchos
+//ejemplo con users posts y categorias posts es la tabla intermedia
+//crear las tablas primarias antes
+//en la tabla intermedia añadimos las 2 claves foraneas con el references on a las otras tablas
+//en la una de las tablas primarias añadimos un nuevo metodo como antes 
+
+//ejemplo en models\User
+public function posts(){
+return $this->hasMany('App\Models\Post');}
+
+//ejemplo en models\Categorias.php
+public function posts(){
+return $this->hasMany('App\Models\Post');}
+
+//relacion inversa en model\Post.php
+public function user(){
+return $this->belongsTo('App\Models\User');}
+
+public function categoria(){
+return $this->belongsTo('App\Models\Categories');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
