@@ -40,4 +40,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function  admin(){ 
+        return $this->hasOne('App\Models\admin');}
+
+    public function  token(){ 
+        return $this->hasOne('App\Models\token');}
+        
+    public function  customer(){ 
+        return $this->hasOne('App\Models\customer');}
+
+    public function orders(){
+        return $this->hasMany('App\Models\orders');}
 }

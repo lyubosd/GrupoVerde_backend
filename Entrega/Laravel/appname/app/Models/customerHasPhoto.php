@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class customerHasPhoto extends Model
 {
     use HasFactory;
+    public function customer(){
+        return $this->belongsTo('App\Models\customer');}
+              
+     public function photo(){
+        return $this->hasMany('App\Models\photo');}    
 }
