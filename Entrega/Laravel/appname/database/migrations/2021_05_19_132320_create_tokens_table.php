@@ -21,10 +21,9 @@ class CreateTokensTable extends Migration
             $table->string('platform')->nullable();
             $table->string('active')->nullable();
             $table->string('createdAt')->unique();
-            $table->timestamps();
             $table->unsignedBigInteger('idUser');
-
-            $table->foreign('idUser')->references('idUser')->on('user'); 
+            $table->foreign('idUser')->references('idUser')->on('users'); 
+            $table->timestamps();
         });
     }
 

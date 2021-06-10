@@ -21,10 +21,9 @@ class CreatePasswordResetsTable extends Migration
             $table-> String('gender')->unique(); 
             $table-> timestamp('address1')->unique(); 
             $table-> timestamp('address2')->unique(); 
-            $table->timestamps();
             $table->unsignedBigInteger('idUser');
-
-            $table-> foreign('idUser')->references('idUser')->on('user');
+            $table-> foreign('idUser')->references('idUser')->on('users');
+            $table->timestamps();
         });
     }
 

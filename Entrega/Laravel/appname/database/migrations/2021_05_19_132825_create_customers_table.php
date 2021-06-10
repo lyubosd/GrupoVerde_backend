@@ -24,7 +24,7 @@ class CreateCustomersTable extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('idUser');
 
-            $table-> foreign('idUser')->references('idUser')->on('user');
+            $table-> foreign('idUser')->references('idUser')->on('users');
         });
     }
 

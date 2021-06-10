@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table-> id('idProduct')->unique(); 
             $table-> String('productName')->unique(); 
             $table-> String('productDescription')->nullable(); 
-            $table-> String('price')->unique(); 
+            $table-> String('price'); 
             $table-> String('type')->nullable(); 
             $table-> String('size')->nullable(); 
             $table-> timestamp('createdAt')->unique(); 

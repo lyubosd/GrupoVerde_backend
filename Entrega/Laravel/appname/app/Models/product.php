@@ -12,7 +12,7 @@ class product extends Model
         return $this->hasMany('App\Models\product_has_category');}
 
         public function  orderdetails(){ 
-            return $this->hasMany('App\Models\orderdetails');}
+            return $this->hasOne('App\Models\orderdetails');}
 
             public function promotion(){
                 return $this->hasMany('App\Models\promotion');}

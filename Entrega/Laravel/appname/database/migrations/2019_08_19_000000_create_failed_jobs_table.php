@@ -15,6 +15,7 @@ class CreateFailedJobsTable extends Migration
     {
         Schema::create('porveedor', function (Blueprint $table) {
             $table-> id('idProveedor')->unique();
+            
         });
     }
 
