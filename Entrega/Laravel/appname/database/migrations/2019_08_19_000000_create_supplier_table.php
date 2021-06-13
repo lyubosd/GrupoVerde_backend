@@ -13,9 +13,8 @@ class CreateFailedJobsTable extends Migration
      */
     public function up()
     {
-        Schema::create('porveedor', function (Blueprint $table) {
-            $table-> id('idProveedor')->unique();
-            
+        Schema::create('supplier', function (Blueprint $table) {
+            $table-> id('idSupplier')->unique();
         });
     }
 
@@ -26,6 +25,6 @@ class CreateFailedJobsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('failed_jobs');
+        Schema::dropIfExists('supplier');
     }
 }

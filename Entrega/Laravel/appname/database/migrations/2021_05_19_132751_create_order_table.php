@@ -20,9 +20,10 @@ class CreateOrdersTable extends Migration
             $table-> timestamp('createdAt')->unique();
             $table->timestamps();
             $table->unsignedBigInteger('idUser');
-            $table->unsignedBigInteger('idProduct');
-            $table-> foreign('ididProductr')->references('idProduct')->on('product');
             $table-> foreign('idUser')->references('idUser')->on('users');
+            $table->unsignedBigInteger('idProduct');
+            $table-> foreign('idProduct')->references('idProduct')->on('product');
+           
         });
     }
 
