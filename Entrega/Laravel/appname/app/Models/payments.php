@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class token extends Model
+class payments extends Model
 {
     use HasFactory;
-    public function user(){
-        return $this->belongsTo('App\Models\User');}
+    public function customer(){
+        return $this->belongsTo('App\Models\customers');}
 }

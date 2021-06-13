@@ -42,13 +42,13 @@ class User extends Authenticatable
     ];
 
     public function  admin(){ 
-        return $this->hasOne('App\Models\admin');}
+        return $this->hasOne('App\Models\admins');}
 
     public function  token(){ 
         return $this->hasOne('App\Models\token');}
         
     public function  customer(){ 
-        return $this->hasOne('App\Models\customer');}
+        return $this->hasOne('App\Models\customers');}
 
     public function orders(){
         return $this->hasMany('App\Models\orders');}

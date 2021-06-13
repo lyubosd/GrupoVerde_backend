@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class productHasPromotion extends Model
+class productHasCategories extends Model
 {
     use HasFactory;
+
+    public function category(){
+        return $this->hasMany('App\Models\categories');}
     public function product(){
         return $this->belongsTo('App\Models\products');}
-        
-    public function  promotion(){ 
-        return $this->hasOne('App\Models\promotions');}  
 }
