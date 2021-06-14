@@ -1,0 +1,10 @@
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Hardy', 'Querree', '9775922206', 'Genderfluid', 'hquerree0@woothemes.com', 'hquerree0@cbslocal.com');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Hubie', 'Brownsea', '6283848731', 'Genderfluid', 'hbrownsea1@scientificamerican.com', 'hbrownsea1@google.ru');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Aile', 'Reuter', '6831002323', 'Genderqueer', 'areuter2@comcast.net', 'areuter2@google.cn');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Marylin', 'Lesper', '6993874898', 'Non-binary', 'mlesper3@wsj.com', 'mlesper3@parallels.com');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Brigg', 'Karpe', '4025597157', 'Polygender', 'bkarpe4@berkeley.edu', 'bkarpe4@umich.edu');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Denys', 'Chittock', '3125189930', 'Agender', 'dchittock5@cnbc.com', 'dchittock5@aol.com');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Arlena', 'Verbrugge', '7948147877', 'Agender', 'averbrugge6@npr.org', 'averbrugge6@sfgate.com');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Vaughan', 'Rame', '9529731160', 'Female', 'vrame7@biblegateway.com', 'vrame7@tripadvisor.com');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Josiah', 'Jaouen', '6901481649', 'Genderqueer', 'jjaouen8@woothemes.com', 'jjaouen8@constantcontact.com');
+insert into customer (firstname, secondname, phone, gender, address1, address2) values ('Leone', 'Bertwistle', '8644608536', 'Male', 'lbertwistle9@goo.ne.jp', 'lbertwistle9@wisc.edu');

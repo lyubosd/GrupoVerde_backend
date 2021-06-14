@@ -1,0 +1,25 @@
+ user//
+'token'//
+'supplier'
+'promotion'
+'productHasPromotion'
+'product'/
+'photo'//
+'payment'//
+'orderdetails'//
+'orders'//
+'customer'//
+'category'//
+'proveedor'
+'admin'//
+'customerHasPhoto'//
+'photo_has_category'//
+'product_has_category'//
+
+ public function product(){
+        return $this->belongsTo('App\Models\product');}
+        public function  admin(){ 
+            return $this->hasOne('App\Models\admin');}
+            
+    public function orders(){
+        return $this->hasMany('App\Models\orders');}

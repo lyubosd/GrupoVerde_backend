@@ -1,0 +1,125 @@
+
+-USER- 
+$table-> id('idUser')->unique(); 
+$table-> String('userName')->unique(); 
+$table-> String('hash')->unique(); 
+$table-> String('email')->unique(); 
+$table-> String('url')->nullable(); 
+$table-> String('emailVerificateAt')->unique(); 
+$table-> timestamp('createdAt')->unique(); 
+$table-> timestamp('updateAt')->unique(); 
+ 
+-CUSTOMER- 
+$table-> id('idCustomer')->unique(); 
+$table-> foreign('idUser')->references('idUser')on('user'); 
+$table-> String('firstName')->unique(); 
+$table-> String('secondName')->unique(); 
+$table-> String('phone')->unique(); 
+$table-> String('gender')->unique(); 
+$table-> timestamp('address1')->unique(); 
+$table-> timestamp('address2')->unique(); 
+ 
+-PROVEEDOR- 
+$table-> id('idProveedor')->unique(); 
+ 
+-SUPPLIER- 
+$table-> id('idSupplier')->unique(); 
+$table-> String('companyName')->unique(); 
+$table-> String('contactFName')->unique(); 
+$table-> String('contactLName')->unique(); 
+$table-> String('contactTitle')->unique(); 
+$table-> String('address1')->unique(); 
+$table-> String('address2')-> nullable(); 
+$table-> String('city')->unique(); 
+$table-> String('postalCode')->unique(); 
+$table-> String('country')->unique(); 
+$table-> String('phone')->unique(); 
+$table-> String('email')->unique(); 
+$table-> String('fax')->nullable(); 
+$table-> timestamp('createdAt')->unique(); 
+$table-> timestamp('updateAt')->unique(); 
+ 
+-PROMOTION- 
+$table-> id('idPromotion')->unique(); 
+$table-> String('discount')->unique(); 
+$table-> String('code')->unique(); 
+$table-> String('promotionCode')-> nullable(); 
+$table-> String('createdAt')-> nullable(); 
+$table-> String('updateAt')-> nullable(); 
+ 
+-PRODUCT- 
+$table-> id('idProduct')->unique(); 
+$table-> foreign('idSupplier')->references('idSupplier')on('supplier'); 
+$table-> foreign('idPromotion')->references('idPromotion')on('promotion'); 
+$table-> String('productName')->unique(); 
+$table-> String('productDescription')->nullable(); 
+$table-> String('price')->unique(); 
+$table-> String('type')->nullable(); 
+$table-> String('size')->nullable(); 
+$table-> timestamp('createdAt')->unique(); 
+$table-> timestamp('updateAt')->unique(); 
+ 
+-ORDER- 
+$table-> id('idOrder')->unique(); 
+$table-> foreign('idUser')->references('idUser')on('user'); 
+$table-> String('numOrder')->unique(); 
+$table-> String('successful')->unique(); 
+$table-> timestamp('createdAt')->unique(); 
+ 
+-ORDERDETALIS- 
+$table-> id('idOrderdetails')->unique(); 
+$table-> foreign('idOrder')->references('idOrder')on('order'); 
+$table-> foreign('idProduct')->references('idProduct')on('product'); 
+$table-> String('numOrder')->unique(); 
+$table-> String('quantity')->unique(); 
+$table-> timestamp('updateAt')->nullable(); 
+ 
+
+//comienzo desde aqui
+TOKEN//done/
+$table->id('idToken');
+$table->string('token')->unique();
+$table->string('hmac')->nullable();
+$table->string('ip')->nullable();
+$table->string('platform')->nullable();
+$table->string('active')->nullable();
+$table->string('createdAt')->unique();
+$table->foreign('idUser')->references('idUser')->on('user');
+
+ADMIN//done
+$table->id('idAdmin');
+$table->foreign('idUser')->references('idUser')->on('user');
+
+PHOTO//done
+$table->id('idPhoto');
+$table->string('url')->unique();
+$table->string('name')->unique();
+$table->string('price');
+$table->string('stock');
+
+CUSTOMERHASPHOTO//falta id//done
+$table->timestamp('createdAt');
+$table->foreign('customerIdCustomer')->references('idCustomer')->on('customer');
+$table->foreign('photoIdPhoto')->references('idPhoto')->on('photo');
+
+PRODUCTHASPROMOTION//falta id //done
+$table->timestamp('createdAt');
+$table->timestamp('updateAt');
+$table->foreign('productIdProduct')->references('idProduct')->on('product');
+$table->foreign('promotionIdPromotion')->references('idPromotion')->on('promotion');
+
+CATEGORY//done
+$table->id('idCategory');
+$table->string('name');
+
+PHOTO_HAS_CATEGORY//falta id creo? //done
+$table->foreign('photoIdPhoto')->references('idPhoto')->on('photo');
+$table->foreign('categoryIdCategory')->references('idCategory')->on('category');
+
+PRODUCT_HAS_CATEGORY//duplicado
+$table->foreign('productIdProduct')->references('idProduct')->on('product');
+$table->foreign('categoryIdCategory')->references('idCategory')->on('category');
+
+
+
+

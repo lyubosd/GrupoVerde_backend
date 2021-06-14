@@ -15,12 +15,12 @@ class CreateCustomersTable extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
-            $table-> String('firstName')->unique(); 
-            $table-> String('secondName')->unique(); 
+            $table-> String('firstName'); 
+            $table-> String('secondName'); 
             $table-> String('phone')->unique(); 
-            $table-> String('gender')->unique(); 
-            $table-> timestamp('address1')->unique(); 
-            $table-> timestamp('address2')->unique();
+            $table-> String('gender'); 
+            $table-> String('address1'); 
+            $table-> String('address2')->nullable();
             $table->unsignedBigInteger('idUser');
             $table-> foreign('idUser')->references('id')->on('users');
             $table->timestamps();

@@ -14,7 +14,7 @@ class CreateTokensTable extends Migration
     public function up()
     {
         Schema::create('tokens', function (Blueprint $table) {
-            $table->id('idToken');
+            $table->id();
             $table->string('token')->unique();
             $table->string('hmac')->nullable();
             $table->string('ip')->nullable();

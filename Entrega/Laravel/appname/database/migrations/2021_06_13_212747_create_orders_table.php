@@ -16,8 +16,8 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table-> String('numOrder')->unique(); 
-            $table-> String('successful')->unique(); 
-            $table-> timestamp('createdAt')->unique();
+            $table->boolean('successful'); 
+            $table-> timestamp('createdAt')->unique(); 
             $table->unsignedBigInteger('idUser');
             $table->unsignedBigInteger('idProduct');
             $table-> foreign('idProduct')->references('id')->on('products');
